@@ -1,0 +1,19 @@
+{
+  "name": "loopstudio- a tailwindcss project",
+  "version": "1.0.0",
+  "description": "Loopstudio - A Tailwind Project based on Brad Traversy'sSimple file structure for Tailwind projects",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tailwindcss -i ./input.css -o ./css/style.css --watch",
+    "build": "tailwindcss -i ./input.css -o ./css/style.css",
+    "build:css": "tailwindcss -i ./input.css -o ./dist/output.css --minify",
+    "predeploy": "npm run build:css",
+    "deploy": "gh-pages -d ."
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "tailwindcss": "^3.1.8"
+  },
+  "keywords": []
+}
